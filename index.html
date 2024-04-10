@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock|Paper|Scissors x 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Rock | Paper | Scissors</h1>
+    
+    <!--random output, click btn to see one of the 3-->
+    <button id="playbtn" onclick="generate()">Play</button>
+    <p class="result" id="result"></p>
+    <p>Now brave soldier, you must choose how to combat Player 1.<br/>
+        Rock, Paper or Scissors? Choose wisely...</p>
+
+    <!--allow user to chose their option-->
+    <p>Choose your weapon:</p>
+        <form>
+            <label>You Choose: </label><br>
+            <input type="text" id="choice"><br>
+            <input type="button" id="submitbtn" value="Submit" onclick="check()">
+        </form> 
+
+    <!--display the game's outcome-->
+    <p class="result" id="outcome"></p>
+<script src="script.js"></script>
+</body>
+</html>
